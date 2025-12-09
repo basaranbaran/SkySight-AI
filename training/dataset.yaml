@@ -1,0 +1,13 @@
+# VisDrone Dataset Configuration (Merged Classes)
+# 3 Classes: Human, Cycle, Vehicle
+
+path: D:/Projeler/ai_proje/cv-advanced-assessment/data/VisDrone  # Absolute path to root
+train: VisDrone2019-DET-train/images
+val: VisDrone2019-DET-val/images
+test: VisDrone2019-DET-test-dev/images
+
+# Classes
+names:
+  0: Human
+  1: Cycle
+  2: Vehicle
