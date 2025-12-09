@@ -32,7 +32,7 @@ def build_engine(onnx_file_path, engine_file_path, precision='fp16', calibration
             return None
 
     # Memory configuration (max workspace size)
-    # config.set_memory_pool_limit(trt.MemoryPoolType.WORKSPACE, 1 << 30) # 1GB
+    config.set_memory_pool_limit(trt.MemoryPoolType.WORKSPACE, 1 << 30)  # 1GB
     
     # Precision configuration
     if precision == 'fp16':
